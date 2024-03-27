@@ -9,4 +9,9 @@
 <h3>Property binding</h3>
 <!-- <element [property]='value'> </element> -->
 <button type="button" [disabled]="btnShow">PropertyBTN</button><br>
-<img [src]="srcValue">
+<img [src]="srcValue" [alt]="name" [title]="name">
+<div [class.background-primary]="true">
+  <p>{{title}}</p>
+</div>
+<button type="button" (click)="sumClick()">CLICAR</button>
+Cliques do mouse: {{ showClick() }}
