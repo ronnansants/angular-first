@@ -1,0 +1,11 @@
+:host{
+  .card{
+    background: rgb(194,29,3);
+    background: linear-gradient(90deg, rgba(194,29,3,1) 0%, rgba(255,61,0,1) 36%, rgba(255,61,61,1) 54%, rgba(255,117,57,1) 100%);
+    color: black;
+    box-shadow: 3px 9px 10px #4b4848;
+    border-radius: 2rem;
+    padding: .25rem 1.5rem 1rem 1.5rem;
+    margin: 2ch 0ch 2ch 0ch;
+  }
+}

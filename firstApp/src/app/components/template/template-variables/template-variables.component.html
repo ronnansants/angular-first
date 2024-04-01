@@ -1,0 +1,12 @@
+<div class="card">
+  <h2 #h2>Template Variables</h2>
+  {{ h2.innerHTML }}
+  <br>
+  <p #conteudo>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, veritatis modi minus alias optio maxime ipsam odio totam quos voluptas vel rem, iste nemo aperiam obcaecati tempore nihil animi. Nisi?
+  Odit ut quo natus illum nisi, corrupti, labore doloribus aperiam inventore quod quis eligendi error! Libero molestias esse labore omnis, eum dolorem doloribus distinctio ut sit provident sunt. Labore, unde.</p>
+  {{ conteudo.innerText.slice(0,18)}}
+  <hr>
+  <app-new-component></app-new-component>
+  <input #name value="Eduardo Cesar">
+    {{name.value}}
+</div>
