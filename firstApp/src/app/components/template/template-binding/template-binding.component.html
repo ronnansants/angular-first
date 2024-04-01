@@ -14,4 +14,15 @@
   <p>{{title}}</p>
 </div>
 <button type="button" (click)="sumClick()">CLICAR</button>
-Cliques do mouse: {{ showClick() }}
+Cliques do mouse: <input type="text" [value]="countClick" readonly="true">
+<br>
+<hr>
+<input [(ngModel)]="name"> {{ name  | uppercase }}
+<hr>
+<div [ngStyle]="{
+  'font-size': age > 20 ? '28px': '18px',
+  'font-family': 'Roboto',
+  }">
+  Testes de estilo
+</div>
+<div [ngClass]="{'background-primary': city.toLowerCase() == 'campo florido' ? 'true' : 'false'}">Cidade : {{city}}</div>

@@ -15,17 +15,12 @@ export class TemplateBindingComponent {
   public city = "Campo Florido";
   public title = "TEMPLATE BINDING";
   public btnShow = false;
-  public countClick:number = 0;
+  public countClick: number = 0;
   public srcValue = '../../../../assets/imgs/relax-logo.png'
 
-  public sumClick(): void{
-    this.countClick++;
-  }
-
-  public showClick(): number{
-    console.log('clicado, '+ this.countClick)
-
-    return this.countClick;
-  }
+     sumClick(){
+      this.countClick++;
+      console.log("Count Clicked!",this.countClick);
+    }
 
 }
