@@ -1,0 +1,20 @@
+<h2>CONTROL FLOW</h2>
+<p>if</p>
+<h3>
+
+  <!-- NEW TYPE-->
+  @if (isEnable) {
+  Yes, enabled. WOW
+} @else {
+  Do not enabled.
+}</h3>
+
+
+<!-- OLD TYPE -->
+<ng-container *ngIf="isEnable; else isFalse">
+  <p>I'm 23 old</p>
+  <p>Greetings, my name is Ronnan</p>
+</ng-container>
+<ng-template #isFalse>
+  <p>Sorry, I can't greet you now.</p>
+</ng-template>

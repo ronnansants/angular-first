@@ -12,9 +12,12 @@ export class TemplateVariablesComponent implements AfterViewInit {
   @ViewChild('h2') public contentP!: ElementRef
   @ViewChild('name') public inputName!: ElementRef
 
+  @ViewChild(NewComponent) public chilfComponent!: NewComponent;
+
   ngAfterViewInit(): void {
     console.log(this.contentP.nativeElement.innerHTML);
-    console.log(this.inputName.nativeElement.value)
+    console.log(this.inputName.nativeElement.value);
+    console.log(this.chilfComponent.name);
   }
 
 }

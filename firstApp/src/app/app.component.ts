@@ -1,3 +1,4 @@
+import { ControlFlowComponent } from './components/template/control-flow/control-flow.component';
 import { TemplateVariablesComponent } from './components/template/template-variables/template-variables.component';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
@@ -7,8 +8,11 @@ import { TemplateBindingComponent } from './components/template/template-binding
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NewComponent, TemplateBindingComponent,TemplateVariablesComponent],
+  imports: [RouterOutlet, NewComponent, TemplateBindingComponent,TemplateVariablesComponent, ControlFlowComponent],
   template: `
+  <app-control-flow></app-control-flow>
+
+  <hr><br><br>
 
   <p class="perform">TEMPLATE PAI</p>
   <p class="perform">{{ title }}</p>
