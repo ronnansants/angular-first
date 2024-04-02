@@ -1,16 +1,31 @@
 <h2>CONTROL FLOW</h2>
-<p>if</p>
-<h3>
 
-  <!-- NEW TYPE-->
+<hr>
+
+<!-- NEW TYPE-->
+<p>Nova forma de fazer.</p>
+<p>usando for</p>
+  @if (loadingData$ | async; as data) {
+    <h3>Use FOR</h3>
+    <ul>
+      @for (item of data; track item) {
+        <li>{{item}}</li>
+      }
+    </ul>
+  } @else{
+    <p>Up to date</p>
+  }
+<p>usando if</p>
   @if (isEnable) {
-  Yes, enabled. WOW
-} @else {
-  Do not enabled.
-}</h3>
-
+    <h3>Yes, enabled.</h3>
+  } @else {
+    <h3>Do not enabled.</h3>
+  }
 
 <!-- OLD TYPE -->
+<hr>
+<p>Nova forma de fazer.</p>
+<p>usando for</p>
 <ng-container *ngIf="isEnable; else isFalse">
   <p>I'm 23 old</p>
   <p>Greetings, my name is Ronnan</p>
