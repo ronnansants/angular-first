@@ -1,0 +1,15 @@
+.image-placeholder {
+  background-color: #f8f9fa; /* Cor de fundo cinza claro do Bootstrap */
+  width: 100%; /* Ajuste conforme necessário */
+  height: 200px; /* Ajuste conforme necessário */
+  border: 1px solid #dee2e6; /* Borda cinza do Bootstrap */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #adb5bd; /* Cor de texto cinza do Bootstrap */
+}
+
+.image-placeholder::before {
+  content: 'Carregando imagem...';
+}
