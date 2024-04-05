@@ -1,8 +1,9 @@
 <h3>Deferrable Views</h3>
 <p>! Praticando !</p>
 @defer () {
-  <div class="row">
-  <div class="col col-md-3 card p-0 shadow"><img src="../../../../assets/imgs/swordsman.jpg" class="card-img-top" alt="...">
+  <div class="row justify-content-around">
+  <div class="col col-md-3 card p-0 shadow">
+    <img src="https://www.denofgeek.com/wp-content/uploads/2021/05/The-Green-Knight-in-A24-Trailer.jpeg?resize=768%2C432" class="card-img-top" alt="Cavaleiro Verde">
 
     <div class="card-body px-3">
       <h5 class="card-title">Card title</h5>
@@ -11,10 +12,30 @@
     </div>
     <div class="card-footer"><a href="#" class="btn btn-primary w-100">Go somewhere</a></div>
   </div>
+  <div class="col col-md-3 card p-0 shadow">
+    <img src="../../../../assets/imgs/swordsman.jpg" class="" alt="Espadachim">
+
+    <div class="card-body px-3">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+    </div>
+    <div class="card-footer"><a href="#" class="btn btn-primary w-100">Go somewhere</a></div>
+  </div>
+  <div class="col col-md-3 card p-0 shadow">
+    <img src="https://image.tmdb.org/t/p/original/4IKPQut8Vuzo4I1T3VS24Unx4xk.jpg" class="card-img-top img-fluid" alt="MrRobot" style="height: 133px;">
+
+    <div class="card-body px-3">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+    </div>
+    <div class="card-footer"><a href="#" class="btn btn-primary">Go somewhere</a></div>
+  </div>
   </div>
 } @placeholder(minimum 200ms) {
-  <div class="card" aria-hidden="true">
-    <div class="image-placeholder"></div>
+  <div class="card col col-md-3" aria-hidden="true">
+    <div class="image-placeholder w-100"></div>
     <div class="card-body">
       <h5 class="card-title placeholder-glow">
         <span class="placeholder col-6"></span>
@@ -29,7 +50,7 @@
       <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
     </div>
 </div>
-} @loading(minimum 15s) {
+} @loading(minimum 150ms) {
   <p>Loading...</p>
 } @error {
   <p>
