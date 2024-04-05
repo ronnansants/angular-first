@@ -1,15 +1,8 @@
 <h3>Deferrable Views</h3>
 <p>! Praticando !</p>
-<<<<<<< HEAD
-@defer (on idle) {
+@defer () {
   <div class="row">
-  <div class="col col-md-3 card p-0 shadow">
-=======
-@defer (on timer(5s)) {
-  <div class="row">
-  <div class="col col-md-3 card p-0">
->>>>>>> a1f694c5798bb06e5b447a95f887d8d575457864
-    <img src="../../../../assets/imgs/swordsman.jpg" class="card-img-top" alt="...">
+  <div class="col col-md-3 card p-0 shadow"><img src="../../../../assets/imgs/swordsman.jpg" class="card-img-top" alt="...">
 
     <div class="card-body px-3">
       <h5 class="card-title">Card title</h5>
@@ -19,11 +12,7 @@
     <div class="card-footer"><a href="#" class="btn btn-primary w-100">Go somewhere</a></div>
   </div>
   </div>
-<<<<<<< HEAD
 } @placeholder(minimum 200ms) {
-=======
-} @placeholder {
->>>>>>> a1f694c5798bb06e5b447a95f887d8d575457864
   <div class="card" aria-hidden="true">
     <div class="image-placeholder"></div>
     <div class="card-body">
@@ -40,7 +29,7 @@
       <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
     </div>
 </div>
-} @loading {
+} @loading(minimum 15s) {
   <p>Loading...</p>
 } @error {
   <p>Failed to loading ! :(

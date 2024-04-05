@@ -1,3 +1,4 @@
+import { SignalsComponent } from './components/signals/signals/signals.component';
 import { ControlFlowComponent } from './components/template/control-flow/control-flow.component';
 import { TemplateVariablesComponent } from './components/template/template-variables/template-variables.component';
 import { Component } from '@angular/core';
@@ -10,15 +11,20 @@ import { DeferrableViewsComponent } from './components/template/deferrable-views
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet, NewComponent, TemplateBindingComponent,TemplateVariablesComponent, ControlFlowComponent, DeferrableViewsComponent
+    RouterOutlet, NewComponent, TemplateBindingComponent,TemplateVariablesComponent, ControlFlowComponent, DeferrableViewsComponent, SignalsComponent
   ],
   template: `
   <div class="container">
-
+  <app-signals></app-signals>
+  <hr><br>
+    <!-- A simple navigation component -->
   <app-deferrable-views></app-deferrable-views>
   <br>
   <app-control-flow></app-control-flow>
 
+  <br><br>
+  <p class="fs-3 text-center">Telefone Dener Troquatte</p>
+  <p class="fs4 text-center">(11) 9 6736-5966</p>
   <hr><br><br>
 
   <p class="perform">TEMPLATE PAI</p>
