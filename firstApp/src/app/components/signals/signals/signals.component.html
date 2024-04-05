@@ -1,0 +1,15 @@
+<p class="fs-1 text-uppercase text-center">Trabalhando com signals</p>
+
+<div class="row border">
+  <span class="lead col">Primeiro Nome</span>
+  <span class="lead col">Ultimo Nome</span>
+  <span class="lead col border border-dark">Nome Completo</span>
+</div>
+<div class="row border mb-4">
+<span class="lead col">{{firstName()}}</span>
+<span class="lead col">{{lastName()}}</span>
+<span class="lead col fw-bolder  border border-dark">{{ fullName() }}</span>
+</div>
+
+<h3>{{age()}} Anos</h3>
+<button type="button" class="btn btn-primary" (click)="updateAge()">Idade misteriosa</button>
