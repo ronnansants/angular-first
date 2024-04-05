@@ -15,7 +15,6 @@ import { DeferrableViewsComponent } from './components/template/deferrable-views
   template: `
   <div class="container">
 
-  <app-deferrable-views></app-deferrable-views>
   <br>
   <app-control-flow></app-control-flow>
 
@@ -25,6 +24,9 @@ import { DeferrableViewsComponent } from './components/template/deferrable-views
   <p class="perform">{{ title }}</p>
   <app-template-binding/>
   <app-template-variables></app-template-variables>
+
+  <hr>
+  <app-deferrable-views></app-deferrable-views>
 
   </div>
   `,
